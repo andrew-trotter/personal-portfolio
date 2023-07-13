@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { getFruits } from '../apis/api'
+import { getProjects } from '../apis/api'
 
 export const fetchProjects = createAsyncThunk('slice/fetchProjects', async () => {
-  return await getFruits()
+  return await getProjects()
 })
 
 const slice = createSlice({
