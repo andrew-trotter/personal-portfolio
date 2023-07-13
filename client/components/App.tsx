@@ -1,24 +1,23 @@
-import { useEffect } from 'react'
-import { useAppDispatch, useAppSelector } from '../hooks'
-import { fetchFruits } from '../slices/fruits'
+import About from './About'
+import Header from './Header'
+
+import Projects from './Projects'
 
 function App() {
-  const fruits = useAppSelector((state) => state.fruits)
-  const dispatch = useAppDispatch()
-  useEffect(() => {
-    dispatch(fetchFruits())
-  }, [dispatch])
-
   return (
     <>
-      <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>
-          {fruits.map((fruit) => (
-            <li key={fruit}>{fruit}</li>
-          ))}
-        </ul>
-      </div>
+      <main className="app h-full px-6 py-12 bg-gray-800 text-white">
+        <div className="flex md:justify-between gap-4" >
+          <div className=''>
+            <Header />
+          </div>
+          <div>
+            <About />
+            <Projects />
+          </div>
+        </div>
+        {/* <Footer /> */}
+      </main>
     </>
   )
 }
