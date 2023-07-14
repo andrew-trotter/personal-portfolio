@@ -4,9 +4,9 @@ import ProjectItem from "./ProjectItem"
 function Projects() {
   const data = projects
   return (
-    <div className="projects">
+    <ul className="my-14">
       {data.map(project => <ProjectItem key={project.id} project={project}/>)}
-    </div>
+    </ul>
   )
 }
 
