@@ -17,4 +17,10 @@ const projects: Project[] = [
   },
 ]
 
+const experiences: Experience[] = [
+  {
+    
+  }
+]
+
 export default projects

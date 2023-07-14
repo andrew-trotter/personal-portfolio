@@ -15,6 +15,7 @@ function App() {
           </div>
           <main className='pt-24 lg:w-1/2 '>
             <About />
+            {/* <Experience /> */}
             <Projects />
           </main>
         </div>
