@@ -1,13 +1,13 @@
-import projects from "../data/data"
+import {experiences} from "../data/data"
 import ExperienceItem from "./ExperienceItem"
 
-function Projects() {
-  const data = projects
+function Experience() {
+  const data = experiences
   return (
-    <ul id="projects" className="my-14">
-      {data.map(project => <ExperienceItem key={project.id} project={project}/>)}
+    <ul id="experiences" className="my-14">
+      {data.map(experience => <ExperienceItem key={experience.id} experience={experience}/>)}
     </ul>
   )
 }
 
-export default Projects
+export default Experience

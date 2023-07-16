@@ -1,6 +1,6 @@
 import {Tech} from "./project"
 
-export type experience = {
+export type Experience = {
   id: number
   name: string
   dateStart: string

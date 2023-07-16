@@ -1,7 +1,9 @@
 import { Project } from "../../models/project";
+import { Experience } from "../../models/experience";
 
 
-const projects: Project[] = [
+
+export const projects: Project[] = [
   {
     id: 1,
     name: 'Pinky Promise - Dev Academy Final Project',
@@ -17,10 +19,14 @@ const projects: Project[] = [
   },
 ]
 
-const experiences: Experience[] = [
+export const experiences: Experience[] = [
   {
-    
+    id: 1,
+    name: "Full Stack Developer Student at Dev Academy Aotearoa",
+    dateStart: 'March',
+    dateEnd: 'July 2023',
+    desc: "An indescribable 800 hours in 15 weeks of constant learning and growth to acquire the technical and human skills required for full stack web development in a modern framework. I learnt to learn incredibly fast with a focus on collaboration, self-awareness and giving/receiving feedback.",
+    techs: [{name: 'React'}, {name: 'react-query'}, {name: 'tailwind.css'}, {name: 'TypeScript'}, {name: 'Knex'}, {name: 'SQLite3'}]
   }
 ]
 
-export default projects
