@@ -1,7 +1,14 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import {NavHashLink} from 'react-router-hash-link'
 
 function Nav() {
+  const navigation = [
+    { name: 'About', href: '#about' },
+    { name: 'Experiences', href: '#experiences' },
+    { name: 'Projects', href: '#projects' },
+  ]
+
   const [path, setPath] = useState('')
 
   function handleNav(input: string) {
@@ -20,23 +27,24 @@ function Nav() {
   }, [path])
 
   return (
-    <nav className="my-14 ">
+    <nav className="my-16 text-gray-600">
       <ul className="flex flex-col gap-4">
-        <li>
-          <Link to={'#about'} onClick={() => handleNav('#about')}>
-            -- About
-          </Link>
-        </li>
-        <li>
-          <Link to={'#experiences'} onClick={() => handleNav('#experiences')}>
-            -- Experiences
-          </Link>
-        </li>
-        <li>
-          <Link to={'#projects'} onClick={() => handleNav('#projects')}>
-            -- Projects
-          </Link>
-        </li>
+        {navigation.map((navItem) => {
+          return (
+            <li
+              key={navItem.name}
+              className="p-2 rounded-lg w-fit focus:ml-4 hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out hover:text-slate-200"
+            >
+              <NavHashLink
+                to={navItem.href}
+                onClick={() => handleNav(`${navItem.href}`)}
+                activeClassName=""
+              >
+                {navItem.name}
+              </NavHashLink>
+            </li>
+          )
+        })}
       </ul>
     </nav>
   )
