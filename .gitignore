@@ -8,3 +8,6 @@ server/public/styles.css.map
 .env
 tags
 output.css
+
+# Local Netlify folder
+.netlify
