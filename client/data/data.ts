@@ -7,13 +7,13 @@ export const projects: Project[] = [
   {
     id: 1,
     name: 'Pinky Promise - Dev Academy Final Project',
-    desc: 'A web app to help keep yourself and friends accountable!',
+    desc: `A web app to help keep yourself and friends accountable! A mobile-first app made for my final group project at Dev Academy. This was the first time I was exposed to an environment with user to user interaction. The challenge here was accommodating for users to have a relationship and see each other's promises regardless of who made it. I would like to improve the robustness around those interaction and style it more acceptably for desktop view.`,
     image: '../../images/pinky-promise.png',
     techs: [{name: 'React'}, {name: 'react-query'}, {name: 'tailwind.css'}, {name: 'TypeScript'}, {name: 'Knex'}, {name: 'SQLite3'}, ]
   },{
     id: 2,
     name: 'Foundations Blog',
-    desc: 'My basic blog detailing my journey through the Foundations content of Dev Academy',
+    desc: 'My humble beginnings with a basic blog detailing my journey through the Foundations content of Dev Academy. Made with only HTML and CSS and a cute picture of Fritz my childhood friend.',
     image: '../../images/personal-blog.png',
     techs: [{name: 'HTML'}, {name: 'CSS'},]
   },
