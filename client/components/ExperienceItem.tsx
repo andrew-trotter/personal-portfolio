@@ -10,6 +10,7 @@ function ExperienceItem(props: Props) {
 
   return (
     // TODO: added frosted glass background on hover
+        // TODO: add start and end date
     <li className=" my-12 ">
       <div className="flex gap-4 p-4 rounded-lg hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out">
         <div>
