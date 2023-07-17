@@ -15,8 +15,8 @@ function Experience() {
       </ul>
 
       
-        <p className="flex group p-4 justify-start">
-          <a href={resume} target="_blank" rel="noopener noreferrer" className='group-hover:text-fuchsia-500 group-hover:ease-in-out duration-300'>
+        <p className="flex group text-gray-400 p-4 justify-start">
+          <a href={resume} target="_blank" rel="noopener noreferrer" className=' group-hover:text-fuchsia-500 group-hover:ease-in-out duration-300'>
             My Resume
           </a>
           <span className="material-symbols-outlined ml-1 group-hover:ease-in-out group-hover:text-fuchsia-500 group-hover:ml-3 duration-300">arrow_right_alt</span>
