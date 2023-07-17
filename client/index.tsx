@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client'
-
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -9,11 +8,7 @@ import {
 import App from './components/App'
 
 const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      
-    </Route>,
-  ),
+  createRoutesFromElements(<Route path="/" element={<App />}></Route>),
 )
 
 document.addEventListener('DOMContentLoaded', () => {
