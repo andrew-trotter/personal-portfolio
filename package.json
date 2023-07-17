@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node dist/server/index.js",
     "test": "vitest",
+    "preview": "vite preview",
     "dev": "run-p dev:client dev:server dev:css",
     "dev:client": "vite",
     "dev:server": "nodemon --watch server/",
