@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { NavHashLink } from 'react-router-hash-link'
 
 function Nav() {
@@ -34,7 +35,7 @@ function Nav() {
               key={navItem.name}
               className="p-2 rounded-lg w-fit focus:ml-4 hover:bg-slate-500 hover:bg-opacity-10 hover:shadow-2xl duration-300 ease-in-out hover:text-slate-200"
             >
-              <NavHashLink
+              <NavLink
                 to={navItem.href}
                 onClick={() => handleNav(`${navItem.href}`)}
                 className={(props) => {
@@ -42,7 +43,7 @@ function Nav() {
                 }}
               >
                 {navItem.name}
-              </NavHashLink>
+              </NavLink>
             </li>
           )
         })}
