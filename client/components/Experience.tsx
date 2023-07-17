@@ -1,6 +1,6 @@
 import { experiences } from '../data/data'
 import ExperienceItem from './ExperienceItem'
-import resume from '../../public/resume.pdf'
+import resume from '../data/resume.pdf'
 
 function Experience() {
   const data = experiences
