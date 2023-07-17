@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import {NavHashLink} from 'react-router-hash-link'
+import { NavHashLink } from 'react-router-hash-link'
 
 function Nav() {
   const navigation = [
@@ -38,7 +37,9 @@ function Nav() {
               <NavHashLink
                 to={navItem.href}
                 onClick={() => handleNav(`${navItem.href}`)}
-                activeClassName=""
+                className={(props) => {
+                  return `${props.isActive ? 'isActive ' : ''}`;
+                }}
               >
                 {navItem.name}
               </NavHashLink>
