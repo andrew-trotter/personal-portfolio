@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
+
 function Nav() {
   const navigation = [
     { name: 'About', href: '#about' },
